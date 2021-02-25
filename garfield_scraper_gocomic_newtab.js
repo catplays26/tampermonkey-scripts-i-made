@@ -17,7 +17,8 @@
 
 setTimeout(() => {
     window.location.assign('https://www.gocomics.com/random/garfield');
-
+var toremove = document.getElementsByClassName("img-fluid lazyautosizes lazyloaded");
+    toremove[0].remove();
    var htmlElements = document.getElementsByClassName("img-fluid lazyloaded");
 console.log(htmlElements.length);
     var img = htmlElements[0];
